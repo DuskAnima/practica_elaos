@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Helados de Crema</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            background: white;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid #777;
+            margin-bottom: 15px;
+        }
+
+        select{
+            background: white;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid #777;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+    </style>
 </head>
+
 <body>
     <form action="">
-        <label for="contacto">Nombre</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre">
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" placeholder="Ingrese sus apellidos" name="apellido" id="apellido">
+        
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Ingrese su correo" name="email" id="email">
+    
+        <label for="servicio">Seleccione servicio: </label>
+        <select name="servicio" id="servicio">
+            <option value="0">...</option>
+            <option value="1">Helado de Chocolate</option>
+            <option value="2">Helado de Vainillla</option>
+            <option value="3">Helado de Fresa</option>
+        </select>
     </form>
 </body>
+
 </html>

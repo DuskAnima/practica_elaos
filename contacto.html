@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Helados de Crema</title>
     <style>
-
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
         }
@@ -17,15 +16,9 @@
             flex-direction: column;
         }
 
-        input {
-            background: white;
-            height: 30px;
-            border-radius: 6px;
-            border: 1px solid #777;
-            margin-bottom: 15px;
-        }
-
-        select{
+        input[type="text"],
+        input[type="email"],
+        select {
             background: white;
             height: 30px;
             border-radius: 6px;
@@ -36,7 +29,6 @@
         label {
             font-weight: bold;
         }
-
     </style>
 </head>
 
@@ -44,13 +36,10 @@
     <form action="">
         <label for="nombre">Nombre:</label>
         <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre">
-        
         <label for="apellido">Apellido:</label>
         <input type="text" placeholder="Ingrese sus apellidos" name="apellido" id="apellido">
-        
         <label for="email">Email:</label>
         <input type="email" placeholder="Ingrese su correo" name="email" id="email">
-    
         <label for="servicio">Seleccione servicio: </label>
         <select name="servicio" id="servicio">
             <option value="0">...</option>
@@ -58,6 +47,11 @@
             <option value="2">Helado de Vainillla</option>
             <option value="3">Helado de Fresa</option>
         </select>
+        <label for="mensaje">Extras para su servicio: </label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <label>Pago al contado <input name="tipo_pago" type="radio" value="CONT"></label>
+        <label>Pago con tarjeta <input name="tipo_pago" type="radio" value="TAR"></label>
+<!--cambios generales en el formulario-->
     </form>
 </body>
 

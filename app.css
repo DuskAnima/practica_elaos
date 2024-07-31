@@ -6,18 +6,25 @@ body {
 
 . (punto al inicio) = Selector de clase ~ las clases tienen la particularidad de que puedo hacer 
 clases generalistas y luego ser más especifico si es que utilizo multiples palabras, por ejemplo:
-#menu
-#menu derecha
-#menu izquierda
-#menu centro
+.menu
+.menu derecha
+.menu izquierda
+.menu centro
 En este caso, si en el selector solo uso la palabra "menu", el selector apuntará a todas las palabras
 que posean "menu" en su inicio, aunque luego se complementen con otra palabra. Por otro lado, puedo
-especificar "menu izquierda" y solo las etiquetas que esten bajo "menu izquierda" serán afectadas, pero no
+especificar ".menu.izquierda" y solo las etiquetas que esten bajo "menu izquierda" serán afectadas, pero no
 las demás, incluyendo "menu" sin complemento. Esto puede ayudar para poder tener más especificidad y versatilidad
-al momento de utilizar los selectores de CLASS(#).
+al momento de utilizar los selectores de CLASS(.). 
+También es posible seleccionar primero la etiqueta y luego una clase especifica que se maneje en esa etiqueta 
+para poder trabajar con más especificidad. Ejemplo: 
+nav.menu 
+Entonces todas las etiquetas nav que posean una clase "menu" se verán afectadas
 
 # (hash al inicio) = Selector de id ~ Por HTML solo debería usarse una vez un ID concreto, esto más por buenas
 prácticas que por las limitaciones del lenguaje mismo. Idealmente debería utilizarse para seleccionar una etiqueta
 padre, para poder contener una sección completa con una determinada consistencia estilística.
 
+* = Selecciona a todos los elementos que estén enlazados con el stylesheet
+
+***Investigar pseudoselectores***
 */

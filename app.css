@@ -1,5 +1,36 @@
 body {
-    background-color: black !important;
+    background: #f4f4f4;
+}
+
+.enlace{
+    font-size: 16px;
+    text-decoration: none;
+}
+.enlace:hover{
+    background-color: #ec3650;
+}
+
+.oferta:hover{
+    background-color: #c3122c;
+}
+
+#titulo{
+
+}
+
+@media only screen and (max-width: 480px){
+    /*Pantallas de 350px, 450px, 479px*/
+    body{
+        background: blue;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /*Pantallas de 481px, 768px*/
+    body{
+        background: red;
+    }
 }
 
 /*Tipos y tips: selectores:
@@ -26,5 +57,10 @@ padre, para poder contener una sección completa con una determinada consistenci
 
 * = Selecciona a todos los elementos que estén enlazados con el stylesheet
 
-***Investigar pseudoselectores***
+***Si tienes una tarea compleja, hay que considerar revisar pseudoselectores***
+
+Guía de uso de Flexbox: 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 */
+
